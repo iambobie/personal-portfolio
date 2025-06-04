@@ -29,7 +29,7 @@ a,
 /* DESKTOP NAV */
 
 nav,
-.nav-links {
+.navigation-menu {
   display: flex;
 }
 
@@ -39,7 +39,7 @@ nav {
   height: 17vh;
 }
 
-.nav-links {
+.navigation-menu {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -58,7 +58,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
+.site-logo {
   font-size: 2rem;
 }
 
@@ -68,7 +68,7 @@ a:hover {
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
+#mobile-navigation {
   display: none;
 }
 
@@ -77,7 +77,7 @@ a:hover {
   display: inline-block;
 }
 
-.hamburger-icon {
+.mobile-nav-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,14 +86,14 @@ a:hover {
   cursor: pointer;
 }
 
-.hamburger-icon span {
+.mobile-nav-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links {
+.mobile-nav-menu {
   position: absolute;
   top: 100%;
   right: 0;
@@ -104,7 +104,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links a {
+.mobile-nav-menu a {
   display: block;
   padding: 10px;
   text-align: center;
@@ -114,35 +114,35 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links li {
+.mobile-nav-menu li {
   list-style: none;
 }
 
-.menu-links.open {
+.mobile-nav-menu.open {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
+.mobile-nav-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:nth-child(2) {
+.mobile-nav-icon.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-icon.open span:last-child {
+.mobile-nav-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
+.mobile-nav-icon span:first-child {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.mobile-nav-icon span:first-child {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.mobile-nav-icon span:first-child {
   transform: none;
 }
 
@@ -160,28 +160,28 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/* Hero */
 
-#profile {
+#hero-section {
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
 
-.section__pic-container {
+.profile-image-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-.section__text {
+.hero-content {
   align-self: center;
   text-align: center;
 }
 
-.section__text p {
+.hero-content p {
   font-weight: 600;
 }
 
@@ -199,7 +199,7 @@ section {
   text-align: center;
 }
 
-#socials-container {
+#social-links {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -215,7 +215,7 @@ section {
 
 /* BUTTONS */
 
-.btn-container {
+.action-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -257,7 +257,7 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
+.action-buttons {
   gap: 1rem;
 }
 
@@ -267,10 +267,10 @@ section {
   position: relative;
 }
 
-.about-containers {
+.info-grid {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about-details-container {
@@ -278,7 +278,7 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
+.info-grid,
 .about-details-container {
   display: flex;
 }
@@ -290,10 +290,10 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 1rem;
 }
 
-.details-container {
+.info-card {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -301,6 +301,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+ 
 }
 
 .section-container {
@@ -308,7 +309,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
+.profile-image-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -324,7 +325,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .experience-details-container {
@@ -333,7 +334,7 @@ section {
   flex-direction: column;
 }
 
-.article-container {
+.skills-grid {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
@@ -359,7 +360,7 @@ article .icon {
   position: relative;
 }
 
-.color-container {
+.project-card {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
@@ -429,4 +430,119 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+
+
+
+
+/* CONTACT SECTION */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+  max-width: 1200px; /* Consistent width with other sections */
+  width: 100%; /* Ensures responsiveness */
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header .section__text__p1 {
+  font-size: 1.5rem;
+  color: rgb(85, 85, 85);
+}
+
+.contact-header .title {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info-item img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.contact-info-item p {
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+}
+
+.contact-info-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-info-item a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgb(53, 53, 53);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.contact-form button:hover {
+  background-color: black;
 }
