@@ -1,4 +1,4 @@
-// Your existing toggleMenu function
+// ToggleMenu function
 function toggleMenu() {
   const menu = document.querySelector(".mobile-nav-menu");
   const icon = document.querySelector(".mobile-nav-icon");
